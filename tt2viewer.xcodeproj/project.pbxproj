@@ -156,7 +156,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = DICE;
+				ORGANIZATIONNAME = "Alexander Tereshkov";
 				TargetAttributes = {
 					CB93153025024B8D000FF43B = {
 						CreatedOnToolsVersion = 11.5;
