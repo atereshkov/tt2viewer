@@ -15,6 +15,7 @@
 		CB93154125024B91000FF43B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB93154025024B91000FF43B /* Preview Assets.xcassets */; };
 		CB93154425024B91000FF43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB93154225024B91000FF43B /* LaunchScreen.storyboard */; };
 		CB93154F25024B91000FF43B /* tt2viewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93154E25024B91000FF43B /* tt2viewerTests.swift */; };
+		CB93155A25025D85000FF43B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = CB93155925025D85000FF43B /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CB93154A25024B91000FF43B /* tt2viewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tt2viewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB93154E25024B91000FF43B /* tt2viewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tt2viewerTests.swift; sourceTree = "<group>"; };
 		CB93155025024B91000FF43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB93155925025D85000FF43B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				CB93154225024B91000FF43B /* LaunchScreen.storyboard */,
 				CB93154525024B91000FF43B /* Info.plist */,
 				CB93153825024B8D000FF43B /* tt2viewer.xcdatamodeld */,
+				CB93155925025D85000FF43B /* data.json */,
 				CB93153F25024B91000FF43B /* Preview Content */,
 			);
 			path = tt2viewer;
@@ -194,6 +197,7 @@
 				CB93154425024B91000FF43B /* LaunchScreen.storyboard in Resources */,
 				CB93154125024B91000FF43B /* Preview Assets.xcassets in Resources */,
 				CB93153E25024B91000FF43B /* Assets.xcassets in Resources */,
+				CB93155A25025D85000FF43B /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +375,7 @@
 				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = tt2viewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +396,7 @@
 				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = tt2viewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
