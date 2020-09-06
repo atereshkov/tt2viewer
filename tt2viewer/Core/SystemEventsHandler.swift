@@ -17,6 +17,12 @@ protocol SystemEventsHandlerType {
 
 class SystemEventsHandler: SystemEventsHandlerType {
     
+    private let container: DIContainer
+    
+    init(container: DIContainer) {
+        self.container = container
+    }
+    
     func sceneOpenURLContexts(_ urlContexts: Set<UIOpenURLContext>) {
         
     }

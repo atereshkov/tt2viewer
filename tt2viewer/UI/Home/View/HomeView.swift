@@ -9,7 +9,9 @@
 import SwiftUI
 import Combine
 
-struct HomeView: View {
+struct HomeView<ViewModelType: HomeViewModelType>: View {
+    
+    @ObservedObject private(set) var viewModel: ViewModelType
     
     var body: some View {
         NavigationView {
@@ -18,7 +20,7 @@ struct HomeView: View {
                 Text("Hello World")
                 Text("Hello World")
             }
-            .navigationBarTitle("My account")
+            .navigationBarTitle(viewModel.accountTitle)
             .navigationBarItems(leading:
                 Button("Add") {
                     Swift.print("Add tapped!")
@@ -29,8 +31,8 @@ struct HomeView: View {
     
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView(viewModel: HomeViewModel())
+//    }
+//}

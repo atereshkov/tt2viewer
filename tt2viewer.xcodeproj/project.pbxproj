@@ -18,6 +18,12 @@
 		CB93155A25025D85000FF43B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = CB93155925025D85000FF43B /* data.json */; };
 		CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */; };
 		CBC79BA4250539EC00DA8BE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BA3250539EC00DA8BE0 /* HomeView.swift */; };
+		CBC79BA825053B5600DA8BE0 /* HomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BA725053B5600DA8BE0 /* HomeViewModelType.swift */; };
+		CBC79BAA25053B5D00DA8BE0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BA925053B5D00DA8BE0 /* HomeViewModel.swift */; };
+		CBC79BAC25053FFD00DA8BE0 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BAB25053FFD00DA8BE0 /* AppEnvironment.swift */; };
+		CBC79BAF2505410C00DA8BE0 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BAE2505410C00DA8BE0 /* DIContainer.swift */; };
+		CBC79BB42505458700DA8BE0 /* ContentViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BB32505458700DA8BE0 /* ContentViewModelType.swift */; };
+		CBC79BB62505459000DA8BE0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BB52505459000DA8BE0 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		CB93155925025D85000FF43B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
 		CBC79BA3250539EC00DA8BE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CBC79BA725053B5600DA8BE0 /* HomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelType.swift; sourceTree = "<group>"; };
+		CBC79BA925053B5D00DA8BE0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CBC79BAB25053FFD00DA8BE0 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		CBC79BAE2505410C00DA8BE0 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CBC79BB32505458700DA8BE0 /* ContentViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelType.swift; sourceTree = "<group>"; };
+		CBC79BB52505459000DA8BE0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +147,11 @@
 		CBC79B9B2504E58200DA8BE0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CBC79BAD250540EC00DA8BE0 /* DI */,
 				CB93153425024B8D000FF43B /* AppDelegate.swift */,
 				CB93153625024B8D000FF43B /* SceneDelegate.swift */,
 				CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */,
+				CBC79BAB25053FFD00DA8BE0 /* AppEnvironment.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -145,7 +159,8 @@
 		CBC79B9E2504F93500DA8BE0 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				CB93153B25024B8D000FF43B /* ContentView.swift */,
+				CBC79BB02505455400DA8BE0 /* View */,
+				CBC79BB12505455B00DA8BE0 /* ViewModel */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -178,9 +193,52 @@
 		CBC79BA2250539D500DA8BE0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CBC79BA3250539EC00DA8BE0 /* HomeView.swift */,
+				CBC79BA525053B4300DA8BE0 /* View */,
+				CBC79BA625053B4A00DA8BE0 /* ViewModel */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		CBC79BA525053B4300DA8BE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BA3250539EC00DA8BE0 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBC79BA625053B4A00DA8BE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BA725053B5600DA8BE0 /* HomeViewModelType.swift */,
+				CBC79BA925053B5D00DA8BE0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBC79BAD250540EC00DA8BE0 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BAE2505410C00DA8BE0 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CBC79BB02505455400DA8BE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB93153B25024B8D000FF43B /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBC79BB12505455B00DA8BE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BB32505458700DA8BE0 /* ContentViewModelType.swift */,
+				CBC79BB52505459000DA8BE0 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,12 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC79BA825053B5600DA8BE0 /* HomeViewModelType.swift in Sources */,
 				CB93153A25024B8D000FF43B /* tt2viewer.xcdatamodeld in Sources */,
+				CBC79BB42505458700DA8BE0 /* ContentViewModelType.swift in Sources */,
+				CBC79BAF2505410C00DA8BE0 /* DIContainer.swift in Sources */,
 				CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */,
+				CBC79BAA25053B5D00DA8BE0 /* HomeViewModel.swift in Sources */,
 				CB93153525024B8D000FF43B /* AppDelegate.swift in Sources */,
 				CBC79BA4250539EC00DA8BE0 /* HomeView.swift in Sources */,
+				CBC79BB62505459000DA8BE0 /* ContentViewModel.swift in Sources */,
 				CB93153C25024B8D000FF43B /* ContentView.swift in Sources */,
 				CB93153725024B8D000FF43B /* SceneDelegate.swift in Sources */,
+				CBC79BAC25053FFD00DA8BE0 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
