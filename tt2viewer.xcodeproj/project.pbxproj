@@ -16,6 +16,7 @@
 		CB93154425024B91000FF43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB93154225024B91000FF43B /* LaunchScreen.storyboard */; };
 		CB93154F25024B91000FF43B /* tt2viewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93154E25024B91000FF43B /* tt2viewerTests.swift */; };
 		CB93155A25025D85000FF43B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = CB93155925025D85000FF43B /* data.json */; };
+		CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		CB93154E25024B91000FF43B /* tt2viewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tt2viewerTests.swift; sourceTree = "<group>"; };
 		CB93155025024B91000FF43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB93155925025D85000FF43B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +85,12 @@
 		CB93153325024B8D000FF43B /* tt2viewer */ = {
 			isa = PBXGroup;
 			children = (
-				CB93153425024B8D000FF43B /* AppDelegate.swift */,
-				CB93153625024B8D000FF43B /* SceneDelegate.swift */,
-				CB93153B25024B8D000FF43B /* ContentView.swift */,
-				CB93153D25024B91000FF43B /* Assets.xcassets */,
-				CB93154225024B91000FF43B /* LaunchScreen.storyboard */,
+				CBC79BA12504F95700DA8BE0 /* Persistence */,
+				CBC79B9B2504E58200DA8BE0 /* Core */,
+				CB93155C25026051000FF43B /* UI */,
+				CB93155B25026025000FF43B /* Model */,
+				CBC79B9F2504F93E00DA8BE0 /* Resources */,
 				CB93154525024B91000FF43B /* Info.plist */,
-				CB93153825024B8D000FF43B /* tt2viewer.xcdatamodeld */,
-				CB93155925025D85000FF43B /* data.json */,
 				CB93153F25024B91000FF43B /* Preview Content */,
 			);
 			path = tt2viewer;
@@ -111,6 +111,65 @@
 				CB93155025024B91000FF43B /* Info.plist */,
 			);
 			path = tt2viewerTests;
+			sourceTree = "<group>";
+		};
+		CB93155B25026025000FF43B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB93155C25026051000FF43B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BA02504F94900DA8BE0 /* LaunchScreen */,
+				CBC79B9E2504F93500DA8BE0 /* Content */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CBC79B9B2504E58200DA8BE0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB93153425024B8D000FF43B /* AppDelegate.swift */,
+				CB93153625024B8D000FF43B /* SceneDelegate.swift */,
+				CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CBC79B9E2504F93500DA8BE0 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB93153B25024B8D000FF43B /* ContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		CBC79B9F2504F93E00DA8BE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB93153D25024B91000FF43B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBC79BA02504F94900DA8BE0 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CB93154225024B91000FF43B /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		CBC79BA12504F95700DA8BE0 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CB93153825024B8D000FF43B /* tt2viewer.xcdatamodeld */,
+				CB93155925025D85000FF43B /* data.json */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB93153A25024B8D000FF43B /* tt2viewer.xcdatamodeld in Sources */,
+				CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */,
 				CB93153525024B8D000FF43B /* AppDelegate.swift in Sources */,
 				CB93153C25024B8D000FF43B /* ContentView.swift in Sources */,
 				CB93153725024B8D000FF43B /* SceneDelegate.swift in Sources */,
