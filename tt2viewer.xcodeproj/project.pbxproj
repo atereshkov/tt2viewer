@@ -17,6 +17,7 @@
 		CB93154F25024B91000FF43B /* tt2viewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93154E25024B91000FF43B /* tt2viewerTests.swift */; };
 		CB93155A25025D85000FF43B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = CB93155925025D85000FF43B /* data.json */; };
 		CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */; };
+		CBC79BA4250539EC00DA8BE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BA3250539EC00DA8BE0 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CB93155025024B91000FF43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB93155925025D85000FF43B /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
+		CBC79BA3250539EC00DA8BE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				CBC79BA02504F94900DA8BE0 /* LaunchScreen */,
 				CBC79B9E2504F93500DA8BE0 /* Content */,
+				CBC79BA2250539D500DA8BE0 /* Home */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -170,6 +173,14 @@
 				CB93155925025D85000FF43B /* data.json */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		CBC79BA2250539D500DA8BE0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BA3250539EC00DA8BE0 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +288,7 @@
 				CB93153A25024B8D000FF43B /* tt2viewer.xcdatamodeld in Sources */,
 				CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */,
 				CB93153525024B8D000FF43B /* AppDelegate.swift in Sources */,
+				CBC79BA4250539EC00DA8BE0 /* HomeView.swift in Sources */,
 				CB93153C25024B8D000FF43B /* ContentView.swift in Sources */,
 				CB93153725024B8D000FF43B /* SceneDelegate.swift in Sources */,
 			);
