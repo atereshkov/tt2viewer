@@ -18,9 +18,8 @@ struct ContentView: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let contentViewModel = ContentViewModel()
-//        return ContentView(viewModel: contentViewModel)
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        return ContentView()
+    }
+}

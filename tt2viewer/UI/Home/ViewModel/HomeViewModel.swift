@@ -10,9 +10,7 @@ import Combine
 
 class HomeViewModel: HomeViewModelType {
     
-    var accountTitle: String {
-        return "My account"
-    }
+    var accountTitle: String = "My account"
     
     let session: SessionType
     
