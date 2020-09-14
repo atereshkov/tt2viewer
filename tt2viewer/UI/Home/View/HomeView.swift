@@ -8,10 +8,11 @@
 
 import SwiftUI
 import Combine
+import DICE
 
-struct HomeView<ViewModelType: HomeViewModelType>: View {
+struct HomeView: View {
     
-    @ObservedObject private(set) var viewModel: ViewModelType
+    @EnvironmentObservableInjected var viewModel: HomeViewModel
     
     var body: some View {
         NavigationView {

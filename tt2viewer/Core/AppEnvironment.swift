@@ -10,16 +10,15 @@ import UIKit
 import Combine
 
 struct AppEnvironment {
-    let container: DIContainer
+    let session: SessionType
     let systemEventsHandler: SystemEventsHandlerType
 }
 
 extension AppEnvironment {
     
-    static func run() -> AppEnvironment {
-        let diContainer = DIContainer()
-        let systemEventsHandler = SystemEventsHandler(container: diContainer)
-        return AppEnvironment(container: diContainer, systemEventsHandler: systemEventsHandler)
+    static func run(session: SessionType) -> AppEnvironment {
+        let systemEventsHandler = SystemEventsHandler(session: session)
+        return AppEnvironment(session: session, systemEventsHandler: systemEventsHandler)
     }
     
 }

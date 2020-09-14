@@ -10,7 +10,7 @@ import Combine
 
 protocol HomeViewModelType: ObservableObject {
     
-    var container: DIContainer { get }
+    var session: SessionType { get }
     
     var accountTitle: String { get }
     

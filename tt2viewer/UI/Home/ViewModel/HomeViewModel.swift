@@ -14,10 +14,10 @@ class HomeViewModel: HomeViewModelType {
         return "My account"
     }
     
-    let container: DIContainer
+    let session: SessionType
     
-    init(container: DIContainer) {
-        self.container = container
+    init(session: SessionType) {
+        self.session = session
     }
     
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,9 +22,9 @@
 		CBC79BA825053B5600DA8BE0 /* HomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BA725053B5600DA8BE0 /* HomeViewModelType.swift */; };
 		CBC79BAA25053B5D00DA8BE0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BA925053B5D00DA8BE0 /* HomeViewModel.swift */; };
 		CBC79BAC25053FFD00DA8BE0 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BAB25053FFD00DA8BE0 /* AppEnvironment.swift */; };
-		CBC79BAF2505410C00DA8BE0 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BAE2505410C00DA8BE0 /* DIContainer.swift */; };
 		CBC79BB42505458700DA8BE0 /* ContentViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BB32505458700DA8BE0 /* ContentViewModelType.swift */; };
 		CBC79BB62505459000DA8BE0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BB52505459000DA8BE0 /* ContentViewModel.swift */; };
+		CBEA8588250FBA1B00DE0723 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8587250FBA1B00DE0723 /* Session.swift */; };
 		F9A98F2B535DC9970DDD4298 /* Pods_tt2viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF390087F87513DC6A66D3 /* Pods_tt2viewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,9 +63,9 @@
 		CBC79BA725053B5600DA8BE0 /* HomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelType.swift; sourceTree = "<group>"; };
 		CBC79BA925053B5D00DA8BE0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CBC79BAB25053FFD00DA8BE0 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
-		CBC79BAE2505410C00DA8BE0 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CBC79BB32505458700DA8BE0 /* ContentViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelType.swift; sourceTree = "<group>"; };
 		CBC79BB52505459000DA8BE0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CBEA8587250FBA1B00DE0723 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,6 @@
 				1BBC256DC859A856CB553815 /* Pods-tt2viewerTests.debug.xcconfig */,
 				ADB31CAF1371EF3629B610D4 /* Pods-tt2viewerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,8 +182,8 @@
 				CBC79BAD250540EC00DA8BE0 /* DI */,
 				CB93153425024B8D000FF43B /* AppDelegate.swift */,
 				CB93153625024B8D000FF43B /* SceneDelegate.swift */,
-				CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */,
 				CBC79BAB25053FFD00DA8BE0 /* AppEnvironment.swift */,
+				CBC79B9C2504E58D00DA8BE0 /* SystemEventsHandler.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -252,7 +251,7 @@
 		CBC79BAD250540EC00DA8BE0 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				CBC79BAE2505410C00DA8BE0 /* DIContainer.swift */,
+				CBEA8587250FBA1B00DE0723 /* Session.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -285,7 +284,7 @@
 				CB93152D25024B8D000FF43B /* Sources */,
 				CB93152E25024B8D000FF43B /* Frameworks */,
 				CB93152F25024B8D000FF43B /* Resources */,
-				90260C4EC934D55E3AE68167 /* [CP] Embed Pods Frameworks */,
+				3CA4E93344FC27A87088B1D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,6 +374,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3CA4E93344FC27A87088B1D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tt2viewer/Pods-tt2viewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tt2viewer/Pods-tt2viewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt2viewer/Pods-tt2viewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		40635DE571AD5036626B3973 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,23 +411,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90260C4EC934D55E3AE68167 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt2viewer/Pods-tt2viewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt2viewer/Pods-tt2viewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt2viewer/Pods-tt2viewer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B1AF62D8730A24ACF99220E0 /* [CP] Check Pods Manifest.lock */ = {
@@ -446,10 +445,10 @@
 				CBC79BA825053B5600DA8BE0 /* HomeViewModelType.swift in Sources */,
 				CB93153A25024B8D000FF43B /* tt2viewer.xcdatamodeld in Sources */,
 				CBC79BB42505458700DA8BE0 /* ContentViewModelType.swift in Sources */,
-				CBC79BAF2505410C00DA8BE0 /* DIContainer.swift in Sources */,
 				CBC79B9D2504E58D00DA8BE0 /* SystemEventsHandler.swift in Sources */,
 				CBC79BAA25053B5D00DA8BE0 /* HomeViewModel.swift in Sources */,
 				CB93153525024B8D000FF43B /* AppDelegate.swift in Sources */,
+				CBEA8588250FBA1B00DE0723 /* Session.swift in Sources */,
 				CBC79BA4250539EC00DA8BE0 /* HomeView.swift in Sources */,
 				CBC79BB62505459000DA8BE0 /* ContentViewModel.swift in Sources */,
 				CB93153C25024B8D000FF43B /* ContentView.swift in Sources */,

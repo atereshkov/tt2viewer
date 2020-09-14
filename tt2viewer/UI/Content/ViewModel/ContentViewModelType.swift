@@ -10,6 +10,6 @@ import Combine
 
 protocol ContentViewModelType: ObservableObject {
     
-    var container: DIContainer { get }
+    var session: SessionType { get }
     
 }

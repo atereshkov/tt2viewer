@@ -7,14 +7,14 @@
 //
 
 import SwiftUI
+import DICE
 
-struct ContentView<ViewModelType: ContentViewModelType>: View {
+struct ContentView: View {
     
-    @ObservedObject private(set) var viewModel: ViewModelType
+    @EnvironmentObservableInjected var viewModel: ContentViewModel
     
     var body: some View {
-        let homeViewModel = HomeViewModel(container: viewModel.container)
-        return HomeView(viewModel: homeViewModel)
+        return HomeView()
     }
 }
 

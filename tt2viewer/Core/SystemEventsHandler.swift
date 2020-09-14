@@ -17,10 +17,10 @@ protocol SystemEventsHandlerType {
 
 class SystemEventsHandler: SystemEventsHandlerType {
     
-    private let container: DIContainer
+    private let session: SessionType
     
-    init(container: DIContainer) {
-        self.container = container
+    init(session: SessionType) {
+        self.session = session
     }
     
     func sceneOpenURLContexts(_ urlContexts: Set<UIOpenURLContext>) {
