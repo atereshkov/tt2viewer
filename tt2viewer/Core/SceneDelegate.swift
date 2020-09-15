@@ -19,6 +19,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let _ = AppEnvironment.run(session: session)
         let contentView = ContentView()
         
+        let url = Bundle.main.url(forResource: "data", withExtension: "json")
+        let jsonData = try? Data(contentsOf: url!)
+        let playerData = try? JSONDecoder().decode(PlayerData.self, from: jsonData!)
+        Swift.print(playerData)
+        
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
