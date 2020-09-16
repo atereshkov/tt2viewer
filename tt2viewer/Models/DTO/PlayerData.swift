@@ -9,7 +9,7 @@
 import Foundation
 
 protocol PlayerDataType {
-    var stats: PlayerStats? { get }
+    var playerStats: PlayerStats? { get }
     var raidStats: RaidStats? { get }
     var artifacts: [String: Artifact]? { get }
     var splashStats: SplashStats? { get }
@@ -21,7 +21,7 @@ protocol PlayerDataType {
 }
 
 struct PlayerData: PlayerDataType, Codable {
-    let stats: PlayerStats?
+    let playerStats: PlayerStats?
     let raidStats: RaidStats?
     let artifacts: [String: Artifact]?
     let splashStats: SplashStats?

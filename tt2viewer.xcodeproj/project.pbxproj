@@ -33,6 +33,14 @@
 		CBEA85A72511059700DE0723 /* PassiveSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA859E2511056900DE0723 /* PassiveSkills.swift */; };
 		CBEA85A82511059700DE0723 /* RaidCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA859A2511056900DE0723 /* RaidCard.swift */; };
 		CBEA85A92511059700DE0723 /* SplashStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85A02511056900DE0723 /* SplashStats.swift */; };
+		CBEA85AD251211B400DE0723 /* PlayerDataViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85AC251211B400DE0723 /* PlayerDataViewItem.swift */; };
+		CBEA85AF2512128500DE0723 /* PlayerStatsViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85AE2512128500DE0723 /* PlayerStatsViewItem.swift */; };
+		CBEA85B12512129600DE0723 /* RaidStatsViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85B02512129600DE0723 /* RaidStatsViewItem.swift */; };
+		CBEA85B3251212A000DE0723 /* ArtifactViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85B2251212A000DE0723 /* ArtifactViewItem.swift */; };
+		CBEA85B5251212A700DE0723 /* EnchantedViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85B4251212A700DE0723 /* EnchantedViewItem.swift */; };
+		CBEA85B7251212B300DE0723 /* PassiveSkillsViewitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85B6251212B300DE0723 /* PassiveSkillsViewitem.swift */; };
+		CBEA85B9251212B900DE0723 /* RaidCardViewitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85B8251212B900DE0723 /* RaidCardViewitem.swift */; };
+		CBEA85BB251212C100DE0723 /* SplashStatsViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA85BA251212C100DE0723 /* SplashStatsViewItem.swift */; };
 		F9A98F2B535DC9970DDD4298 /* Pods_tt2viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AF390087F87513DC6A66D3 /* Pods_tt2viewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +90,14 @@
 		CBEA859F2511056900DE0723 /* RaidStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidStats.swift; sourceTree = "<group>"; };
 		CBEA85A02511056900DE0723 /* SplashStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStats.swift; sourceTree = "<group>"; };
 		CBEA85A12511056900DE0723 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		CBEA85AC251211B400DE0723 /* PlayerDataViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataViewItem.swift; sourceTree = "<group>"; };
+		CBEA85AE2512128500DE0723 /* PlayerStatsViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsViewItem.swift; sourceTree = "<group>"; };
+		CBEA85B02512129600DE0723 /* RaidStatsViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidStatsViewItem.swift; sourceTree = "<group>"; };
+		CBEA85B2251212A000DE0723 /* ArtifactViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactViewItem.swift; sourceTree = "<group>"; };
+		CBEA85B4251212A700DE0723 /* EnchantedViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchantedViewItem.swift; sourceTree = "<group>"; };
+		CBEA85B6251212B300DE0723 /* PassiveSkillsViewitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassiveSkillsViewitem.swift; sourceTree = "<group>"; };
+		CBEA85B8251212B900DE0723 /* RaidCardViewitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidCardViewitem.swift; sourceTree = "<group>"; };
+		CBEA85BA251212C100DE0723 /* SplashStatsViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStatsViewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +301,15 @@
 		CBEA85992511056300DE0723 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CBEA85AA251200CA00DE0723 /* DTO */,
+				CBEA85AB251200D500DE0723 /* View */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBEA85AA251200CA00DE0723 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
 				CBEA859D2511056900DE0723 /* PlayerData.swift */,
 				CBEA85A12511056900DE0723 /* PlayerStats.swift */,
 				CBEA859F2511056900DE0723 /* RaidStats.swift */,
@@ -294,7 +319,22 @@
 				CBEA859A2511056900DE0723 /* RaidCard.swift */,
 				CBEA85A02511056900DE0723 /* SplashStats.swift */,
 			);
-			path = Models;
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		CBEA85AB251200D500DE0723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA85AC251211B400DE0723 /* PlayerDataViewItem.swift */,
+				CBEA85AE2512128500DE0723 /* PlayerStatsViewItem.swift */,
+				CBEA85B02512129600DE0723 /* RaidStatsViewItem.swift */,
+				CBEA85B2251212A000DE0723 /* ArtifactViewItem.swift */,
+				CBEA85B4251212A700DE0723 /* EnchantedViewItem.swift */,
+				CBEA85B6251212B300DE0723 /* PassiveSkillsViewitem.swift */,
+				CBEA85B8251212B900DE0723 /* RaidCardViewitem.swift */,
+				CBEA85BA251212C100DE0723 /* SplashStatsViewItem.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,7 +508,9 @@
 			files = (
 				CBEA85A62511059700DE0723 /* Enchanted.swift in Sources */,
 				CBC79BA825053B5600DA8BE0 /* HomeViewModelType.swift in Sources */,
+				CBEA85AD251211B400DE0723 /* PlayerDataViewItem.swift in Sources */,
 				CB93153A25024B8D000FF43B /* tt2viewer.xcdatamodeld in Sources */,
+				CBEA85B5251212A700DE0723 /* EnchantedViewItem.swift in Sources */,
 				CBEA85A42511059700DE0723 /* RaidStats.swift in Sources */,
 				CBEA85A82511059700DE0723 /* RaidCard.swift in Sources */,
 				CBC79BB42505458700DA8BE0 /* ContentViewModelType.swift in Sources */,
@@ -477,14 +519,20 @@
 				CBEA85A22511059400DE0723 /* PlayerData.swift in Sources */,
 				CBC79BAA25053B5D00DA8BE0 /* HomeViewModel.swift in Sources */,
 				CBEA85A92511059700DE0723 /* SplashStats.swift in Sources */,
+				CBEA85B12512129600DE0723 /* RaidStatsViewItem.swift in Sources */,
 				CBEA85A52511059700DE0723 /* Artifact.swift in Sources */,
 				CB93153525024B8D000FF43B /* AppDelegate.swift in Sources */,
 				CBEA8588250FBA1B00DE0723 /* Session.swift in Sources */,
 				CBEA85A32511059700DE0723 /* PlayerStats.swift in Sources */,
+				CBEA85B3251212A000DE0723 /* ArtifactViewItem.swift in Sources */,
 				CBC79BA4250539EC00DA8BE0 /* HomeView.swift in Sources */,
+				CBEA85B9251212B900DE0723 /* RaidCardViewitem.swift in Sources */,
 				CBC79BB62505459000DA8BE0 /* ContentViewModel.swift in Sources */,
 				CB93153C25024B8D000FF43B /* ContentView.swift in Sources */,
 				CB93153725024B8D000FF43B /* SceneDelegate.swift in Sources */,
+				CBEA85BB251212C100DE0723 /* SplashStatsViewItem.swift in Sources */,
+				CBEA85B7251212B300DE0723 /* PassiveSkillsViewitem.swift in Sources */,
+				CBEA85AF2512128500DE0723 /* PlayerStatsViewItem.swift in Sources */,
 				CBC79BAC25053FFD00DA8BE0 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
